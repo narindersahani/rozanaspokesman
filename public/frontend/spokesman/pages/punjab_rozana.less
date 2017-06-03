@@ -1,0 +1,441 @@
+.punjab_rozana{
+	margin-top: 10px;
+	.main-title{
+		h3{
+			background-color: @pink;
+		}
+	}
+	.sports-news{
+		border-bottom: 1px solid @darkgrey;
+	}
+	.right_sidebar{
+		.post-listing{
+			ul{
+				li{
+					a{
+
+					}
+				}
+			}
+		}
+	}
+	.opinion_area{
+		.main-title{
+			h3{
+				background-color: @green;
+			}
+		}
+		.img_area{
+			height: 120px;
+			width: 120px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-bottom: 10px;
+			.center-block();
+			img{
+				width: 100%;
+			}
+		}
+		.paragraph{
+			z-index: 222;
+			position: relative;
+			&:before{
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				height: 27px;
+				width: 37px;
+				background-image: url('../images/left-quote.png');
+				background-repeat: no-repeat;
+				background-size: 35px;
+				z-index: 11;
+			}
+			p{
+				font-size: 16px;
+				color: @grey;
+				padding-bottom: 10px;
+				position: relative;
+				z-index: 333;
+				&.name{
+					text-transform: uppercase;
+					&:before{
+						display: none;
+					}
+					span{
+						text-transform: none;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	.left-sports{
+		margin-top: 15px;
+		border-bottom: 0 !important;
+	}
+}
+
+.rozana_news{
+	margin-top: 5px;
+	.news-area{
+		border-top: 1px solid @grey;
+		border-bottom: none;
+		padding-top: 20px;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+		.left_area{
+			.one_half{
+				&:last-child{
+					.thumbnail{
+						margin-bottom: 0;
+					}
+				}
+			}
+			.content{
+				a{
+					display: block;
+					padding-bottom: 5px;
+					h2{
+						font-size: 24px;
+						color: @black;
+						.transition(all .3s ease);
+						&:hover{
+							color: @red;
+						}
+					}
+				}
+				p{
+					font-size: 16px;
+					padding: 5px 0;
+				}
+				.read-more{
+					display: block;
+					color: @black;
+					position: relative;
+					padding: 6px 0px 6px 15px;
+					&:before{
+						position: absolute;
+						content: '\f101';
+						font-family: 'fontAwesome';
+						top: 0;
+						left: 0;
+						margin-top: 0px;
+						font-size: 22px;
+						color: @red;
+					}
+					&:hover{
+						color: @red;
+					}
+				}
+			}
+		}
+		.right_area{
+			.thumbnail{
+				.caption{
+					a{
+						font-size: 22px;
+					}
+				}
+			}
+		}
+		.middle_area{
+			ul{
+				li{
+					border-bottom: 1px solid @grey;
+					padding: 10px 0;
+					&:first-child{
+						padding-top: 0;
+					}
+					&:last-child{
+						border-bottom: none;
+					}
+					a{
+						display: block;
+						color: @black;
+						font-size: 22px;
+						&:hover{
+							color: @red;
+						}
+					}
+					p{
+						font-size: 16px;
+						color: @black;
+					}
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.video_area_box{
+			iframe{
+				width: 100%;
+				height: 280px;
+			}
+			a{
+				margin-top: 20px;
+				display: block;
+				h2{
+					color: @black;
+					font-size: 25px;
+					.transition(all .3s ease);
+					&:hover{
+						color: @red;
+					}
+				}
+			}
+			.share_post{
+				margin-top: 25px;
+				.clearfix();
+				span{
+					margin-top: 22px;
+				}
+				.list-inline{
+					li{
+						a{
+							display: block;
+							height: 25px;
+							width: 25px;
+							background-color: #959595;
+							border-radius: 50%;
+							text-align: center;
+							color: @white;
+							font-size: 14px;
+							line-height: 28px;
+							margin-right: 3px;
+						}
+						&.facebook{
+							a{
+								&:hover{
+									background-color: @facebook;
+								}
+							}
+						}
+						&.twitter{
+							a{
+								&:hover{
+									background-color: @twitter;
+								}
+							}
+						}
+						&.google-plus{
+							a{
+								&:hover{
+									background-color: @google-plus;
+								}
+							}
+						}
+						&.youtube{
+							a{
+								&:hover{
+									background-color: @youtube;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px){
+    
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px){
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.punjab_rozana{
+		.left-sports{
+			.border-line{
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+	.rozana_news{
+		.news-area{
+			.video_area_box{
+				iframe{
+					height: 250px;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	.rozana_news{
+		.news-area{
+			.right_area{
+				border-top: none;
+				padding-top: 0;
+			}
+			.video_area_box{
+				margin-top: 20px;
+				iframe{
+					height: 380px;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	.rozana_news{
+		.news-area{
+			.border-left{
+				border: none;
+			}
+			.right_area{
+				border-top: none;
+				padding-top: 5px;
+			}
+			.border-line{
+				&:before{
+					display: none;
+				}
+				&:after{
+					display: none;
+				}
+			}
+			.middle_area{
+				border-top: 1px solid @grey;
+				padding-top: 10px;
+				margin-top: 10px;
+			}
+			.video_area_box{
+				iframe{
+					height: 250px;
+				}
+				a{
+					margin-top: 10px;
+					h2{
+						font-size: 22px;
+					}
+				}
+				.share_post{
+					span{
+						margin-top: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	.rozana_news{
+		.news-area{
+			.border-left{
+				border: none;
+			}
+			.right_area{
+				border-top: none;
+				padding-top: 5px;
+			}
+			.border-line{
+				&:before{
+					display: none;
+				}
+				&:after{
+					display: none;
+				}
+			}
+			.middle_area{
+				border-top: 1px solid @grey;
+				padding-top: 10px;
+				margin-top: 10px;
+			}
+			.video_area_box{
+				iframe{
+					height: 250px;
+				}
+				a{
+					margin-top: 10px;
+					h2{
+						font-size: 22px;
+					}
+				}
+				.share_post{
+					span{
+						margin-top: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	.rozana_news{
+		.news-area{
+			.border-left{
+				border: none;
+			}
+			.right_area{
+				border-top: none;
+				padding-top: 5px;
+			}
+			.border-line{
+				&:before{
+					display: none;
+				}
+				&:after{
+					display: none;
+				}
+			}
+			.middle_area{
+				border-top: 1px solid @grey;
+				padding-top: 10px;
+				margin-top: 10px;
+			}
+			.video_area_box{
+				iframe{
+					height: 250px;
+				}
+				a{
+					margin-top: 10px;
+					h2{
+						font-size: 22px;
+					}
+				}
+				.share_post{
+					span{
+						margin-top: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

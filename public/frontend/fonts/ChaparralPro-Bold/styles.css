@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'ChaparralPro-Bold';
+  src: url('ChaparralPro-Bold.eot?#iefix') format('embedded-opentype'),  url('ChaparralPro-Bold.otf')  format('opentype'),
+	     url('ChaparralPro-Bold.woff') format('woff'), url('ChaparralPro-Bold.ttf')  format('truetype'), url('ChaparralPro-Bold.svg#ChaparralPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,264 @@
+.opinion_rozana{
+	margin-top: 20px;
+	.content-display{
+		.left_box{
+			border-bottom: 1px solid @grey;
+			padding-bottom: 5px;
+			.main-title{
+				h3{
+					background-color: @green;
+					color: @white;
+				}
+			}
+			.even{
+				.opinion_area{
+					.img_area{
+						margin: 0;
+						.center-block();
+					}
+				}
+			}
+		}
+		.bottom_box{
+			margin-top: 15px;
+			padding-bottom: 15px;
+		}
+		.opinion_area{
+			min-height: 340px;
+			.img_area{
+				margin-top: 15px;
+				height: 150px;
+				width: 150px;
+				border-radius: 50%;
+				overflow: hidden;
+				.center-block();
+				img{
+					width: 100%;
+				}
+			}
+			h2{
+				padding: 10px 0;
+				font-size: 22px;
+				position: relative;
+				&:after{
+					position: absolute;
+					content: '';
+					top: 0;
+					left: 0;
+					height: 58px;
+					width: 70px;
+					margin-top: 15px;
+					background-image: url('../images/quote.png');
+					background-repeat: no-repeat;
+					background-size: 70px;
+				}
+			}
+			span{
+				display: block;
+				font-size: 16px;
+			}
+			p{
+				font-size: 18px;
+			}
+		}
+		.right_sidebar{
+			.post-listing{
+				.main-title{
+					h3{
+						background-color: @blue;
+						color: @white;
+					}
+				}
+				ul{
+					li{
+						a{
+							padding: 0;
+							border-bottom: 0;
+						}
+						&:last-child{
+							border-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px){
+    
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px){
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.opinion_rozana{
+		.content-display{
+			.opinion_area{
+				min-height: 350px;
+				.img_area{
+					height: 130px;
+					width: 130px;
+				}
+				h2{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	.hidden-border{
+		border: none;
+	}
+	.opinion_rozana{
+		.content-display{
+			.opinion_area{
+				min-height: 320px;
+				.img_area{
+					height: 130px;
+					width: 130px;
+				}
+				h2{
+					font-size: 18px;
+				}
+				span{
+					font-size: 12px;
+				}
+				p{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	.opinion_rozana{
+		margin-top: 10px;
+		.content-display{
+			.left_box{
+				border-bottom: none;
+			}
+			.border-right{
+				border: none;
+			}
+			.opinion_area{
+				min-height: auto;
+				border-bottom: 1px solid;
+				border-color: @grey;
+				padding: 10px 0px 20px 0px;
+				margin-bottom: 10px;
+				.img_area{
+					height: 160px;
+					width: 160px;
+				}
+				h2{
+					font-size: 24px;
+				}
+				span{
+					font-size: 16px;
+				}
+				p{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	.opinion_rozana{
+		margin-top: 10px;
+		.content-display{
+			.left_box{
+				border-bottom: none;
+			}
+			.border-right{
+				border: none;
+			}
+			.opinion_area{
+				min-height: auto;
+				border-bottom: 1px solid;
+				border-color: @grey;
+				padding: 10px 0px 20px 0px;
+				margin-bottom: 10px;
+				.img_area{
+					height: 160px;
+					width: 160px;
+				}
+				h2{
+					font-size: 24px;
+				}
+				span{
+					font-size: 16px;
+				}
+				p{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	.opinion_rozana{
+		margin-top: 10px;
+		.content-display{
+			.left_box{
+				border-bottom: none;
+			}
+			.border-right{
+				border: none;
+			}
+			.opinion_area{
+				min-height: auto;
+				border-bottom: 1px solid;
+				border-color: @grey;
+				padding: 10px 0px 20px 0px;
+				margin-bottom: 10px;
+				.img_area{
+					height: 160px;
+					width: 160px;
+				}
+				h2{
+					font-size: 24px;
+				}
+				span{
+					font-size: 16px;
+				}
+				p{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

@@ -1,0 +1,642 @@
+.sports_section_page{
+	margin-top: 15px;
+	margin-bottom: 5px;
+	.main-title{
+		margin-bottom: 15px;
+		&.sports_title{
+			h3{
+				background-color: @lightgreen;
+			}
+		}
+		h3{
+			background-color: @brown;
+			color: @white;
+		}
+	}
+	.left_sports_news{
+		padding-top: 10px;
+		.post_sidebar{
+			position: relative;
+			margin-bottom: 10px;
+			.img_area{
+				height: 80px;
+				width: 80px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-bottom: 10px;
+				.center-block();
+				img{
+					width: 100%;
+				}
+			}
+			a{
+				display: block;
+				padding-left: 0;
+				color: @black;
+				text-align: center;
+				font-size: 18px;
+				line-height: 20px;
+			}
+			.number{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding-left: 0px;
+				font-family: 'ChaparralPro-Bold';
+				font-size: 50px;
+				color: @red;
+				z-index: 1;
+				opacity: 0.6;
+				margin-bottom: -15px;
+			}
+		}
+	}
+	.middle_sports_area{
+		.latest_sports_post{
+			position: relative;
+			img{
+				width: 100%;
+			}
+			.caption{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 50%;
+				margin-left: 30px;
+				margin-top: 30px;
+				h3{
+					a{
+						color: @white;
+						font-size: 24px;
+						&:hover{
+							color: @red;
+						}
+					}
+				}
+				span{
+					display: block;
+					color: @white;
+					font-size: 14px;
+					padding: 10px 0;
+				}
+				p{
+					margin-top: 40px;
+					color: @white;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+.sports_bottom_section{
+	.sports_bottom_area{
+		border-top: 1px solid @grey;
+		padding-top: 10px;
+		.sports-box{
+			img{
+				width: 100%;
+			}
+			a{
+				display: block;
+				padding-top: 10px;
+				h2{
+					font-size: 22px;
+					color: @black;
+					line-height: 26px;
+					.transition(all .3s ease);
+					&:hover{
+						color: @red;
+					}
+				}
+			}
+			span{
+				display: block;
+				padding-top: 5px;
+				font-size: 12px;
+			}
+			h3{
+				font-size: 24px;
+				color: @black;
+			}
+			p{
+				padding: 5px 0px;
+				font-size: 16px;
+			}
+			.read-more{
+				display: block;
+				color: @black;
+				position: relative;
+				padding-left: 18px;
+				&:before{
+					position: absolute;
+					content: '\f101';
+					font-family: 'fontAwesome';
+					top: 0;
+					left: 0;
+					margin-top: 4px;
+					font-size: 22px;
+					color: @red;
+				}
+				&:hover{
+					color: @red;
+				}
+			}
+		}
+		.bottom_middle{
+			.add_block{
+				&.horzontal_add{
+					margin-top: 20px;
+				}
+				img{
+					width: 100%;
+				}
+			}
+			.thumbnail{
+				margin: 0px;
+				padding: 0;
+				border: none;
+				border-radius: 0;
+				a{
+					padding: 5px 0;
+					display: block;
+					color: @black;
+					font-size: 18px;
+					line-height: 22px;
+				}
+				span{
+					display: block;
+				}
+			}
+		}
+		.news_area{
+			margin-bottom: 20px;
+			h3{
+				a{
+					font-size: 24px;
+					color: #000;
+					&:hover{
+						color: @red;
+					}
+				}
+			}
+			span{
+				padding: 3px 0;
+				display: block;
+			}
+			p{
+				padding-top: 2px;
+				font-size: 16px;
+			}
+			.read-more{
+				display: block;
+				color: @black;
+				position: relative;
+				padding-left: 18px;
+				padding-top: 5px;
+				margin-top: 10px;
+				&:before{
+					position: absolute;
+					content: '\f101';
+					font-family: 'fontAwesome';
+					top: 0;
+					left: 0;
+					margin-top: 0px;
+					font-size: 22px;
+					color: @red;
+				}
+				&:hover{
+					color: @red;
+				}
+			}
+		}
+	}
+}
+
+.sports_last_area{
+	.news-area{
+		margin-top: 20px;
+		margin-bottom: 0;
+		border-bottom: 0;
+		border-top: 1px solid @grey;
+		padding-top: 20px;
+		.left_area{
+			.sports-box{
+				img{
+					width: 100%;
+				}
+				iframe{
+					width: 100%;
+					height: 300px;
+				}
+				a{
+					display: block;
+					padding-top: 10px;
+					h2{
+						font-size: 22px;
+						color: @black;
+						line-height: 26px;
+						.transition(all .3s ease);
+						&:hover{
+							color: @red;
+						}
+					}
+				}
+				span{
+					display: block;
+					padding-top: 5px;
+					font-size: 12px;
+				}
+				h3{
+					a{
+						margin: 0;
+						padding: 0;
+						display: block;
+						font-size: 24px;
+						color: @black;
+						&:hover{
+							color: @red;
+						}
+					}
+				}
+				p{
+					padding: 5px 0px;
+					font-size: 16px;
+				}
+				.read-more{
+					display: block;
+					color: @black;
+					position: relative;
+					padding-left: 18px;
+					padding-bottom: 10px;
+					&:before{
+						position: absolute;
+						content: '\f101';
+						font-family: 'fontAwesome';
+						top: 0;
+						left: 0;
+						margin-top: 4px;
+						font-size: 22px;
+						color: @red;
+					}
+					&:hover{
+						color: @red;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px){
+    
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px){
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.sports_section_page{
+		margin-top: 10px;
+		.main-title{
+			margin-bottom: 10px;
+		}
+		.left_sports_news{
+			padding-top: 5px;
+			.post_sidebar{
+				.img_area{
+					height: 60px;
+					width: 60px;
+					margin-bottom: 5px;
+				}
+				a{
+					padding-left: 15px;
+					font-size: 14px;
+					line-height: 18px;
+				}
+				.number{
+					font-size: 35px;
+					margin-bottom: -7px;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	.sports_section_page{
+		margin-top: 10px;
+		.main-title{
+			margin-bottom: 10px;
+		}
+		.border-line{
+			&:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+	}
+	.sports_bottom_section{
+		.sports_bottom_area{
+			.border-right{
+				border: none;
+			}
+			.border-left{
+				border: none;
+			}
+			.sports-box{}
+			.bottom_middle{
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				border-color: @grey;
+				padding: 15px 0;
+				margin: 10px 0;
+			}
+		}
+	}
+	.punjab-news-section{
+		&.sports_last_area{
+			margin-top: 0;
+			.news-area{
+				margin-top: 5px;
+				.left_area{
+					padding-bottom: 10px;
+					margin-bottom: 20px;
+					border-bottom: 1px solid @grey;
+				}
+				.border-left{
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	.sports_section_page{
+		margin-top: 10px;
+		.main-title{
+			margin-bottom: 10px;
+		}
+		.middle_sports_area{
+			.latest_sports_post{
+				.caption{
+					width: 80%;
+					h3{
+						a{
+							font-size: 20px;
+						}
+					}
+					p{
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+		.border-line{
+			&:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+	}
+	.sports_bottom_section{
+		.sports_bottom_area{
+			.border-right{
+				border: none;
+			}
+			.border-left{
+				border: none;
+			}
+			.sports-box{
+
+			}
+			.bottom_middle{
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				border-color: @grey;
+				padding: 15px 0;
+				margin: 10px 0;
+			}
+		}
+	}
+	.punjab-news-section{
+		&.sports_last_area{
+			margin-top: 0;
+			.news-area{
+				margin-top: 5px;
+				.left_area{
+					padding-bottom: 10px;
+					margin-bottom: 20px;
+					border-bottom: 1px solid @grey;
+					.sports-box{
+						padding-bottom: 20px;
+					}
+					.one_half{
+						.thumbnail{
+							.caption{
+								a{
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+				.border-left{
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	.sports_section_page{
+		margin-top: 10px;
+		.main-title{
+			margin-bottom: 10px;
+		}
+		.middle_sports_area{
+			.latest_sports_post{
+				.caption{
+					width: 80%;
+					h3{
+						a{
+							font-size: 20px;
+						}
+					}
+					p{
+						display: none;
+					}
+				}
+			}
+		}
+		.border-line{
+			&:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+	}
+	.sports_bottom_section{
+		.sports_bottom_area{
+			.border-right{
+				border: none;
+			}
+			.border-left{
+				border: none;
+			}
+			.sports-box{
+
+			}
+			.bottom_middle{
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				border-color: @grey;
+				padding: 15px 0;
+				margin: 10px 0;
+			}
+		}
+	}
+	.punjab-news-section{
+		&.sports_last_area{
+			margin-top: 0;
+			.news-area{
+				margin-top: 5px;
+				.left_area{
+					padding-bottom: 10px;
+					margin-bottom: 20px;
+					border-bottom: 1px solid @grey;
+					.sports-box{
+						padding-bottom: 20px;
+					}
+					.one_half{
+						.thumbnail{
+							.caption{
+								a{
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+				.border-left{
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	.sports_section_page{
+		margin-top: 10px;
+		.main-title{
+			margin-bottom: 10px;
+		}
+		.middle_sports_area{
+			.latest_sports_post{
+				.caption{
+					width: 80%;
+					h3{
+						a{
+							font-size: 20px;
+						}
+					}
+					p{
+						display: none;
+					}
+				}
+			}
+		}
+		.border-line{
+			&:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+	}
+	.sports_bottom_section{
+		.sports_bottom_area{
+			.border-right{
+				border: none;
+			}
+			.border-left{
+				border: none;
+			}
+			.sports-box{
+
+			}
+			.bottom_middle{
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				border-color: @grey;
+				padding: 15px 0;
+				margin: 10px 0;
+			}
+		}
+	}
+	.punjab-news-section{
+		&.sports_last_area{
+			margin-top: 0;
+			.news-area{
+				margin-top: 5px;
+				.left_area{
+					padding-bottom: 10px;
+					margin-bottom: 20px;
+					border-bottom: 1px solid @grey;
+					.sports-box{
+						padding-bottom: 20px;
+					}
+					.one_half{
+						.thumbnail{
+							.caption{
+								a{
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+				.border-left{
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

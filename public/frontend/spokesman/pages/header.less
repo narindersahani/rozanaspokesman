@@ -1,0 +1,914 @@
+.header-section{
+	margin: 5px 0px;
+	.header-top-area{
+		padding-left: 15px;
+		padding-right: 15px;
+		[class*="col-"]{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.one-third{
+			&.logo-area{
+				padding-top: 12px;
+				padding-bottom: 12px;
+				a{
+					display: block;
+					img{
+						padding-right: 10px;
+						width: 100%;
+					}
+				}
+			}
+			&.right-box{
+				padding-right: 15px;
+				padding-left: 15px;
+				.lang{
+					padding-left: 15px;
+					padding-top: 6px;
+					padding-bottom: 6px;
+					padding-right: 25px;
+					.list-inline{
+						li{
+							padding: 0px;
+							&:after{
+								display: none;
+							}
+							a{
+								font-size: 14px;
+								text-transform: uppercase;
+								position: relative;
+								color: @black;
+								&:after{
+									position: absolute;
+									content: '';
+									top: 0;
+									right: 0;
+									height: 1px;
+									width: 10px;
+									margin-right: -15px;
+									margin-top: 8px;
+									background-color: @black;
+								}
+								&:hover{
+									color: @red;
+								}
+							}
+							&.active{
+								a{
+									color: @red;
+								}
+							}
+							&:first-child{
+								padding-right: 15px;
+							}
+							&:last-child{
+								a{
+									&:after{
+										display: none;
+									}
+								}
+							}
+						}
+					}
+					.epaper{
+						border-bottom: 1px solid;
+						border-color: @grey;
+						padding-bottom: 5px;
+						a{
+							display: block;
+							padding-right: 10px;
+							img{
+								width: 100%;
+							}
+						}
+					}
+				}
+				.date{
+					padding-top: 5px;
+					font-size: 13px;
+					line-height: 15px;
+					span{
+						display: block;
+					}
+				}
+				.right-area{
+					padding-left: 15px;
+					padding-right: 15px;
+					form{
+						.form-group{
+							position: relative;
+							.form-control{
+								box-shadow: none;
+								border: none;
+								border-radius: 0;
+								border-bottom: 1px solid @grey;
+								padding-left: 20px;
+							}
+							&:after{
+								position: absolute;
+								content: '\f002';
+								font-family: 'fontAwesome';
+								top: 0;
+								left: 0;
+								font-size: 14px;
+								color: @grey;
+								margin-top: 6px;
+								z-index: 9999;
+							}
+						}
+					}
+					.social-icons{
+						.list-inline{
+							li{
+								padding: 0px 2px;
+								&:after{
+									display: none;
+								}
+								a{
+									text-align: center;
+									display: block;
+									height: 25px;
+									width: 25px;
+									background-color: @grey;
+									border-radius: 50%;
+									font-size: 14px;
+									padding-top: 4px;
+									color: @white;
+								}
+								&.facebook{
+									a{
+										&:hover{
+											background-color: @facebook;
+										}
+									}
+								}
+								&.twitter{
+									a{
+										&:hover{
+											background-color: @twitter;
+										}
+									}
+								}
+								&.google-plus{
+									a{
+										&:hover{
+											background-color: @google-plus;
+										}
+									}
+								}
+								&.youtube{
+									a{
+										&:hover{
+											background-color: @youtube;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.ads_area-768{
+			padding: 8px 15px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+.dl-menuwrapper{
+	display: none;
+	z-index: 999;
+	float: right;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-top: 0px;
+	.dl-trigger{
+		background: @red;
+		.transition(all .3s ease);
+		&:hover{
+			background-color: darken(@red, 10%);
+		}
+		&.dl-active{
+			background-color: darken(@red, 10%);
+		}
+	}
+	ul{
+		z-index: 9;
+		background: @black;
+		li{
+			text-align: left;
+			&.dl-back{
+				&:after{
+					color: @white;
+				}
+			}
+			a{
+				color: @white;
+				text-transform: uppercase;
+				font-size: 16px;
+				.transition(all .3s ease);
+				&:after{
+					color: @white;
+				}
+			}
+		}
+	}
+}
+
+.menu-section{
+	background-color: @red;
+	padding: 6px 0px;
+	.menu-area{
+		.list-inline{
+			margin: 0 auto;
+			text-align: center;
+			li{
+				a{
+					display: block;
+					padding: 0px 10px;
+					color: @white;
+					position: relative;
+					font-size: 18px;
+					&:after{
+						position: absolute;
+						content: '';
+						top: 0;
+						right: 0;
+						height: 1px;
+						width: 8px;
+						background-color: @white;
+						margin-top: 13px;
+						margin-right: -6px;
+					}
+					&:hover{
+						color: @white;
+					}
+				}
+				&.active{
+					a{
+						color: @white;
+					}
+				}
+				&:last-child{
+					a{
+						&:after{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.category_section{
+	background-color: #ececec;
+	padding: 5px 0px;
+	.cat_listing{
+		.list-inline{
+			display: table;
+			margin: 0 auto;
+			li{
+				padding: 0;
+				a{
+					display: block;
+					padding: 0px 8px;
+					font-size: 18px;
+					color: @black;
+					position: relative;
+					&:after{
+						position: absolute;
+						content: '';
+						top: 0;
+						right: 0;
+						height: 17px;
+						width: 1px;
+						margin-top: 3px;
+						background-color: @black;
+					}
+				}
+				&:last-child{
+					a{
+						&:after{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.epaper{
+			padding-top: 10px;
+			a{
+				position: relative;
+				display: inline-block;
+				z-index: 9999;
+				img{
+					width: 120px;
+				}
+			}
+		}
+		.dl-menuwrapper{
+			.dl-trigger{
+				background: @green;
+				&:hover{
+					background-color: darken(@green, 10%);
+				}
+				&.dl-active{
+					background-color: darken(@green, 10%);
+				}
+			}
+		}
+	}	
+}
+
+
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px){
+    
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px){
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.header-section{
+		.header-top-area{
+			.one-third{
+				&.logo-area{
+					a{
+						padding: 4px 0;
+						img{
+							padding-right: 15px;
+						}
+					}
+				}
+				&.right-box{
+					.lang{
+						padding-left: 12px;
+						padding-right: 10px;
+						.epaper{
+							a{
+								img{
+
+								}
+							}
+						}
+						.list-inline{
+							li{
+								a{
+									font-size: 11px;
+									&:after{
+										width: 8px;
+										margin-right: -10px;
+										margin-top: 6px;
+									}
+								}
+								&:first-child{
+									padding-right: 15px;
+								}
+							}
+						}
+					}
+					.date{
+						font-size: 11px;
+					}
+					.right-area{
+						form{
+							.form-group{
+								.form-control{
+									padding-left: 17px;
+								}
+							}
+						}
+						.social-icons{
+							.list-inline{
+								li{
+									padding: 0px 2px;
+									a{
+										height: 25px;
+										width: 25px;
+										font-size: 14px;
+										padding-top: 4px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.dl-menuwrapper{
+		display: none;
+	}
+	.menu-section{
+		.menu-area{
+			.list-inline{
+				li{
+					a{
+						font-size: 16px;
+						&:after{
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.category_section{
+		.cat_listing{
+			.list-inline{
+				li{
+					a{
+						font-size: 16px;
+						&:after{
+							height: 15px;
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	.header-section{
+		margin: 0;
+		.header-top-area{
+			padding: 5px 0;
+			.one-third{
+				height: 66px;
+				&.logo-area{
+					a{
+						padding: 4px 0;
+						img{
+							padding-right: 10px;
+						}
+					}
+				}
+				&.right-box{
+					.lang{
+						padding: 0;
+						padding-left: 6px;
+						padding-top: 5px;
+						padding-right: 6px;
+						.epaper{
+							a{
+								img{
+
+								}
+							}
+						}
+						.list-inline{
+							li{
+								a{
+									font-size: 9px;
+									&:after{
+										width: 8px;
+										margin-right: -10px;
+										margin-top: 6px;
+									}
+								}
+								&:first-child{
+									padding-right: 15px;
+								}
+							}
+						}
+					}
+					.date{
+						font-size: 11px;
+					}
+					.right-area{
+						form{
+							.form-group{
+								margin-bottom: 10px;
+								.form-control{
+									padding-left: 17px;
+								}
+							}
+						}
+						.social-icons{
+							.list-inline{
+								li{
+									padding: 0px 1px;
+									a{
+										height: 22px;
+										width: 22px;
+										font-size: 12px;
+										padding-top: 4px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.dl-menuwrapper{
+		display: none;
+	}
+	.menu-section{
+		.menu-area{
+			.list-inline{
+				li{
+					a{
+						padding: 0px 7px;
+						font-size: 14px;
+						&:after{
+							width: 5px;
+							margin-top: 9px;
+							margin-right: -4px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.category_section{
+		.cat_listing{
+			.list-inline{
+				li{
+					a{
+						padding: 0px 6px;
+						font-size: 14px;
+						&:after{
+							height: 13px;
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	.header-section{
+		margin: 0;
+		.header-top-area{
+			padding: 5px 0;
+			[class*="col-"]{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.one-third{
+				&.logo-area{
+					border-bottom: 1px solid;
+					border-color: @grey;
+					a{
+						padding: 0px 0px 0px 0px;
+						img{
+							padding-right: 0px;
+							width: 200px;
+						}
+					}
+				}
+				&.listing{
+					padding: 0;
+					.list-inline{
+						li{
+							a{
+								font-size: 14px;
+								&:after{
+									margin-right: -4px;
+									margin-top: 10px;
+									width: 5px;
+								}
+							}
+						}
+					}
+				}
+				&.right-box{
+					.lang{
+						padding: 0;
+						padding-left: 6px;
+						padding-top: 5px;
+						.list-inline{
+							li{
+								a{
+									font-size: 9px;
+									&:after{
+										width: 8px;
+										margin-right: -10px;
+										margin-top: 6px;
+									}
+								}
+								&:first-child{
+									padding-right: 15px;
+								}
+							}
+						}
+					}
+					.date{
+						font-size: 11px;
+					}
+					.right-area{
+						form{
+							.form-group{
+								margin-bottom: 10px;
+								.form-control{
+									padding-left: 17px;
+								}
+							}
+						}
+						.social-icons{
+							.list-inline{
+								li{
+									padding: 0px 1px;
+									a{
+										height: 22px;
+										width: 22px;
+										font-size: 12px;
+										padding-top: 4px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.dl-menuwrapper{
+		display: block;
+		margin-right: 15px;
+		margin-top: 5px;
+	}
+	.menu-section{
+		display: none;
+	}
+	.category_section{
+		.cat_listing{
+			height: 45px;
+			.list-inline{
+				display: none;
+				li{
+					a{
+						padding: 0px 6px;
+						font-size: 14px;
+						&:after{
+							height: 13px;
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	.header-section{
+		margin: 0;
+		.header-top-area{
+			padding: 5px 0;
+			[class*="col-"]{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.one-third{
+				&.logo-area{
+					border-bottom: 1px solid;
+					border-color: @grey;
+					a{
+						padding: 0px 0px 0px 0px;
+						img{
+							padding-right: 0px;
+							width: 140px;
+						}
+					}
+				}
+				&.listing{
+					padding: 0;
+					.list-inline{
+						li{
+							a{
+								font-size: 14px;
+								&:after{
+									margin-right: -4px;
+									margin-top: 10px;
+									width: 5px;
+								}
+							}
+						}
+					}
+				}
+				&.right-box{
+					.lang{
+						padding: 0;
+						padding-left: 6px;
+						padding-top: 5px;
+						.list-inline{
+							li{
+								a{
+									font-size: 9px;
+									&:after{
+										width: 8px;
+										margin-right: -10px;
+										margin-top: 6px;
+									}
+								}
+								&:first-child{
+									padding-right: 15px;
+								}
+							}
+						}
+					}
+					.date{
+						font-size: 11px;
+					}
+					.right-area{
+						form{
+							.form-group{
+								margin-bottom: 10px;
+								.form-control{
+									padding-left: 17px;
+								}
+							}
+						}
+						.social-icons{
+							.list-inline{
+								li{
+									padding: 0px 1px;
+									a{
+										height: 22px;
+										width: 22px;
+										font-size: 12px;
+										padding-top: 4px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.dl-menuwrapper{
+		display: block;
+		margin-right: 15px;
+	}
+	.menu-section{
+		display: none;
+	}
+	.category_section{
+		.cat_listing{
+			height: 45px;
+			.list-inline{
+				display: none;
+				li{
+					a{
+						padding: 0px 6px;
+						font-size: 14px;
+						&:after{
+							height: 13px;
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	.header-section{
+		margin: 0;
+		.header-top-area{
+			padding: 5px 0;
+			[class*="col-"]{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.one-third{
+				&.logo-area{
+					border-bottom: 1px solid;
+					border-color: @grey;
+					a{
+						padding: 0px 0px 0px 0px;
+						img{
+							padding-right: 0px;
+							width: 140px;
+						}
+					}
+				}
+				&.listing{
+					padding: 0;
+					.list-inline{
+						li{
+							a{
+								font-size: 14px;
+								&:after{
+									margin-right: -4px;
+									margin-top: 10px;
+									width: 5px;
+								}
+							}
+						}
+					}
+				}
+				&.right-box{
+					.lang{
+						padding: 0;
+						padding-left: 6px;
+						padding-top: 5px;
+						.list-inline{
+							li{
+								a{
+									font-size: 9px;
+									&:after{
+										width: 8px;
+										margin-right: -10px;
+										margin-top: 6px;
+									}
+								}
+								&:first-child{
+									padding-right: 15px;
+								}
+							}
+						}
+					}
+					.date{
+						font-size: 11px;
+					}
+					.right-area{
+						form{
+							.form-group{
+								margin-bottom: 10px;
+								.form-control{
+									padding-left: 17px;
+								}
+							}
+						}
+						.social-icons{
+							.list-inline{
+								li{
+									padding: 0px 1px;
+									a{
+										height: 22px;
+										width: 22px;
+										font-size: 12px;
+										padding-top: 4px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.dl-menuwrapper{
+		display: block;
+		margin-right: 15px;
+	}
+	.menu-section{
+		display: none;
+	}
+	.category_section{
+		.cat_listing{
+			height: 45px;
+			.list-inline{
+				display: none;
+				li{
+					a{
+						padding: 0px 6px;
+						font-size: 14px;
+						&:after{
+							height: 13px;
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

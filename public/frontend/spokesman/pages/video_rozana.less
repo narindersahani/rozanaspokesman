@@ -1,0 +1,218 @@
+.video_section_page{
+	margin-top: 15px;
+	.main-title{
+		&.video_title{
+			h3{
+				background-color: @blue;
+			}
+		}
+		&.video_right_title{
+			h3{
+				background-color: @brown;
+			}
+		}
+		h3{
+			background-color: @green;
+			color: @white;
+		}
+	}
+	.left_video_news{
+		.opinion_area{
+			.img_area{
+				height: 120px;
+				width: 120px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-bottom: 10px;
+				.center-block();
+				img{
+					width: 100%;
+				}
+			}
+			.paragraph{
+				z-index: 222;
+				position: relative;
+				&:before{
+					position: absolute;
+					content: '';
+					top: 0;
+					left: 0;
+					height: 27px;
+					width: 37px;
+					background-image: url('../images/left-quote.png');
+					background-repeat: no-repeat;
+					background-size: 35px;
+					z-index: 11;
+				}
+				p{
+					font-size: 16px;
+					color: @grey;
+					padding-bottom: 10px;
+					position: relative;
+					z-index: 333;
+					&.name{
+						text-transform: uppercase;
+						&:before{
+							display: none;
+						}
+						span{
+							text-transform: none;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+	.middle_video_area{
+		.latest_video_post{
+			h3{
+				font-size: 24px;
+				font-family: 'ChaparralPro-Bold';
+			}
+			span{
+				display: block;
+			}
+			iframe{
+				margin-top: 15px;
+				width: 100%;
+				height: 350px;
+			}
+		}
+	}
+	.right_video_news{
+		.post_sidebar{
+			margin-bottom: 10px;
+			.img_area{
+				img{
+					width: 100%;
+				}
+			}
+			a{
+				font-size: 16px;
+				color: @black;
+				&:hover{
+					color: @red;
+				}
+			}
+		}
+	}
+}
+
+.related_video_section{
+	.videos-parts{
+		margin: 0px 0px 0px 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+		border-top: 1px solid @grey;
+		[class*="col-"]{
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.videos-box{
+			margin-bottom: 20px;
+			iframe{
+				width: 100%;
+			}
+			a{
+				display: block;
+				padding: 5px 0;
+				color: @grey;
+				font-size: 18px;
+				line-height: 22px;
+				&:hover{
+					color: @black;
+				}
+			}
+		}
+	}
+}
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px){
+    
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px){
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	.video_section_page{
+		.border-line{
+			&:after{
+				display: none;
+			}
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	.video_section_page{
+		.border-line{
+			&:after{
+				display: none;
+			}
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	.video_section_page{
+		.border-line{
+			&:after{
+				display: none;
+			}
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	.video_section_page{
+		.border-line{
+			&:after{
+				display: none;
+			}
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

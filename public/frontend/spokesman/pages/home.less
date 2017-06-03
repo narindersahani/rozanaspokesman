@@ -1,0 +1,1785 @@
+.post-section{
+	padding: 20px 0px 15px 0px;
+	.post_area{
+		.right-area{
+			.post-listing{
+				.main-title{
+					h3{
+						background-color: @blue;
+						color: @white;
+					}
+				}
+				ul{
+					li{
+						a{
+							display: block;
+							padding: 0px 0px;
+							color: @grey;
+							font-size: 16px;
+							line-height: 21px;
+							&:hover{
+								color: @black;
+							}
+						}
+					}
+				}
+			}
+			.ads_area{
+				img{
+					width: 100%;
+				}
+			}
+			.opinion_area{
+				padding-top: 10px;
+				.main-title{
+					h3{
+						background-color: @green;
+						color: @white;
+					}
+				}
+				.paragraph{
+					border-bottom: 1px solid @grey;
+					z-index: 222;
+					position: relative;
+					/* &:before{
+						position: absolute;
+						content: '';
+						top: 0;
+						left: 0;
+						height: 27px;
+						width: 37px;
+						background-image: url('../images/left-quote.png');
+						background-repeat: no-repeat;
+						background-size: 35px;
+						z-index: 11;
+					} */
+					p{
+						font-size: 16px;
+						color: @grey;
+						padding-bottom: 10px;
+						position: relative;
+						z-index: 333;
+						span{
+							margin-right: 5px;
+							img{
+								width: 28px;
+							}
+						}
+						&.name{
+							text-transform: uppercase;
+							&:before{
+								display: none;
+							}
+							span{
+								text-transform: none;
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.left-area{
+		.slide-post{
+			position: relative;
+			.item{
+				img{
+					width: 100%;
+				}
+				.caption{
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding-left: 25px;
+					width: 40%;
+					padding-top: 20px;
+					background-image: url('../images/slider/black-bg.png');
+					background-position: -150px 0px;
+					height: 100%;
+					.main-title{
+						margin-bottom: 15px;
+						margin-left: -25px;
+						h3{
+							background-color: @red;
+							color: @white;
+							padding-left: 25px;
+							padding-right: 10px;
+							font-family: 'ChaparralPro-Bold';
+						}
+					}
+					h2{
+						color: @white;
+						font-size: 22px;
+						font-family: 'ChaparralPro-Bold';
+					}
+					span{
+						display: block;
+						color: @white;
+					}
+					p{
+						font-size: 16px;
+						color: @white;
+						padding: 5px 0px 5px 0px;
+					}
+					.read-more{
+						display: block;
+						color: @white;
+						position: relative;
+						padding: 6px 0px 6px 15px;
+						&:before{
+							position: absolute;
+							content: '\f101';
+							font-family: 'fontAwesome';
+							top: 0;
+							left: 0;
+							margin-top: 0px;
+							font-size: 22px;
+							color: @red;
+						}
+						&:hover{
+							color: @red;
+						}
+					}
+				}
+				.plus-icon{
+					position: absolute;
+					top: 0;
+					right: 0;
+					margin-right: 15px;
+					margin-top: 15px;
+					a{
+						display: block;
+						height: 22px;
+						width: 22px;
+						background-color: @red;
+						border-radius: 50%;
+						text-align: center;
+						line-height: 25px;
+						color: @white;
+						font-size: 13px;
+						&:hover{
+							background-color: darken(@red, 10%);
+						}
+					}
+				}
+			}
+			.owl-controls{
+				position: absolute;
+				text-align: left;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				padding-left: 25px;
+				margin-bottom: 15px;
+				.owl-buttons{
+					div{
+						background-color: transparent;
+						border-color: @white;
+					}
+				}
+				.owl-pagination{
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					padding-right: 10px;
+					.owl-page{
+						height: 10px;
+						width: 10px;
+						background-color: @white;
+						border-radius: 50%;
+						margin-right: 5px;
+						float: left;
+						&.active{
+							background-color: @red;
+						}
+					}
+				}
+			}
+		}
+		.slide-text{
+			margin-top: 11px;
+			border-top: 1px solid @grey;
+			border-bottom: 1px solid @grey;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			.owl-item{
+				border-right: 1px solid @black;
+			}
+			.item{
+				.logo-holder{
+					/* border-right: 1px solid @black; */
+					padding: 0px 15px;
+					position: relative;
+					z-index: 222;
+					&.border0{
+						border-left: 0;
+					}
+					.img_box{
+						padding-right: 10px;
+						img{
+							width: 70px;
+							height: 55px;
+						}
+					}
+					a{
+						display: block;
+						font-size: 15px;
+						color: @black;
+						position: relative;
+						z-index: 333;
+						line-height: 18px;
+						&:hover{
+							color: @red;
+						}
+						img{
+							width: 100%;
+						}
+					}
+					.numbers{
+						position: absolute;
+						top: 0;
+						left: 0;
+						padding-left: 5px;
+						margin-top: -14px;
+						font-family: 'ChaparralPro-Bold';
+						font-size: 70px;
+						color: @red;
+						z-index: 1;
+						opacity: 0.6;
+					}
+				}
+			}
+		}
+	}
+}
+
+.punjab-news-section{
+	.main-title{
+		h3{
+			background-color: @pink;
+			color: @white;
+		}
+	}
+	.news-area{
+		margin-bottom: 20px;
+		padding: 10px 0px 10px 0px;
+		border-bottom: 1px solid @grey;
+		.left_area{
+			.one_half{
+				.thumbnail{
+					margin: 0px 0px 20px 0px;
+					padding: 0;
+					border: 0;
+					border-radius: 0;
+					img{
+						width: 100%;
+						&.add-img{
+							width: auto;
+						}
+					}
+					.caption{
+						margin: 0;
+						padding: 5px 0px 0px 0px;
+						a{
+							font-size: 18px;
+							color: @black;
+							line-height: 20px;
+							&:hover{
+								color: @red;
+							}
+						}
+						.date{
+							color: @black;
+							text-align: right;
+							font-size: 12px;
+						}
+					}
+				}
+			}
+			.npost_content_box{
+				a{
+					font-size: 18px;
+					line-height: 22px;
+					color: #000000;
+					&:hover{
+						color: @red;
+					}
+				}
+				span{
+					display: block;
+				}
+				p{
+					padding-top: 10px;
+					font-size: 16px;
+				}
+			}
+		}
+		.right_area{
+			.one-half-post{
+				.content{
+					a{
+						color: @black;
+						font-size: 24px;
+						line-height: 26px;
+						&:hover{
+							color: @red;
+						}
+					}
+					p{
+						font-size: 16px;
+						padding-top: 8px;
+						padding-bottom: 15px;
+						color: @black;
+					}
+				}
+			}
+			.healthy_tips{
+				margin-top: 40px;
+				.recent-post{
+					.clearfix();
+					.img_area{
+						height: 120px;
+						width: 120px;
+						overflow: hidden;
+						border-radius: 50%;
+						margin-right: 20px;
+					}
+					.tips_area{
+						h2{
+							font-family: 'AngellifeFREE';
+							color: @red;
+							padding-bottom: 10px;
+						}
+						p{
+							font-size: 20px;
+							font-style: italic;
+							line-height: 24px;
+						}
+					}
+				}
+				img{
+					width: 100%;
+				}
+				.owl-controls{
+					margin-top: 5px;
+					.owl-buttons{
+						div{
+							border-radius: 50%;
+							background-color: #dadada;
+							border: none;
+							&:hover{
+								background-color: @grey;
+							}
+							i{
+								font-size: 24px;
+							}
+							&.owl-prev{
+								padding-right: 3px;
+							}
+							&.owl-next{
+								padding-left: 2px;
+							}
+						}
+					}
+				}
+			}
+			.thumbnail{
+				margin: 0;
+				padding: 0;
+				border-radius: 0;
+				border: none;
+				img{
+					width: 100%;
+				}
+				.caption{
+					margin: 25px 0px 10px 0px;
+					padding: 0;
+					a{
+						font-size: 24px;
+						color: @black;
+						line-height: 26px;
+						.transition(all .3s ease);
+						&:hover{
+							color: @red;
+						}
+					}
+					.date{
+						padding-top: 5px;
+						color: @grey;
+						font-size: 14px;
+					}
+					p{
+						font-size: 16px;
+						padding-top: 10px;
+						color: @grey;
+					}
+				}
+			}
+		}
+	}
+}
+
+.related-video-section{
+	.main-title{
+		h3{
+			background-color: @darkblue;
+			color: @white;
+		}
+	}
+	.video-section{
+		margin-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		[class*="col-"]{
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.ad_box_width{
+			width: 170px;
+			padding-right: 10px;
+			float: left;
+		}
+		.custom_width{
+			width: 1070px;
+			float: left;
+			.clearfix();
+		}
+		.left-add{
+			img{
+				width: auto;
+				height: auto;
+			}
+		}
+		.left-video{
+			iframe{
+				width: 100%;
+				height: 600px;
+			}
+			a{
+				position: relative;
+				display: block;
+				&:after{
+					position: absolute;
+					content: '';
+					top: 50%;
+					left: 0;
+					right: 0;
+					margin-top: -50px;
+					margin-left: auto;
+					margin-right: auto;
+					height: 80px;
+					width: 80px;
+					background-image: url('../images/video_icon.png');
+					background-repeat: no-repeat;
+					background-size: 80px;
+				}
+			}
+			img{
+				width: 100%;
+			}
+		}
+		.right-area{
+			a{
+				position: relative;
+				display: block;
+				&:after{
+					position: absolute;
+					content: '';
+					top: 50%;
+					left: 0;
+					right: 0;
+					margin-top: -50px;
+					margin-left: auto;
+					margin-right: auto;
+					height: 80px;
+					width: 80px;
+					background-image: url('../images/video_icon.png');
+					background-repeat: no-repeat;
+					background-size: 80px;
+				}
+			}
+			iframe{
+				width: 100%;
+				height: 600px;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.videos-parts{
+		margin: 10px 0px 15px 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid @grey;
+		[class*="col-"]{
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.videos-box{
+			img{
+				width: 100%;
+				height: auto;
+			}
+			iframe{
+				width: 100%;
+			}
+			a{
+				display: block;
+				padding: 5px 0;
+				color: @grey;
+				font-size: 18px;
+				line-height: 22px;
+				position: relative;
+				&:hover{
+					color: @black;
+				}
+				&:first-child{
+					&:after{
+						position: absolute;
+						content: '';
+						top: 50%;
+						left: 0;
+						right: 0;
+						margin-top: -30px;
+						margin-left: auto;
+						margin-right: auto;
+						height: 55px;
+						width: 55px;
+						background-image: url('../images/video_icon.png');
+						background-repeat: no-repeat;
+						background-size: 55px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.sports-section{
+	.main-title{
+		h3{
+			background-color: @lightgreen;
+			color: @white;
+		}
+	}
+	.sports-news{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		/* border-bottom: 1px solid @grey; */
+		padding-bottom: 10px;
+		.left-sports{
+			border-bottom: 1px solid @grey;
+			padding-bottom: 10px;
+			.sports-box{
+				img{
+					width: 100%;
+				}
+				.ads_area{
+					img{
+						width: 100%;
+						&.one{
+							padding-bottom: 10px;
+						}
+					}
+				}
+				a{
+					display: block;
+					padding-top: 10px;
+					h2{
+						font-size: 22px;
+						color: @black;
+						line-height: 26px;
+						.transition(all .3s ease);
+						&:hover{
+							color: @red;
+						}
+					}
+				}
+				span{
+					display: block;
+					padding-top: 5px;
+					font-size: 12px;
+				}
+				h3{
+					font-size: 24px;
+					color: @black;
+				}
+				p{
+					padding: 5px 0px;
+					font-size: 16px;
+				}
+				.read-more{
+					display: block;
+					color: @black;
+					position: relative;
+					padding-left: 18px;
+					&:before{
+						position: absolute;
+						content: '\f101';
+						font-family: 'fontAwesome';
+						top: 0;
+						left: 0;
+						margin-top: 4px;
+						font-size: 22px;
+						color: @red;
+					}
+					&:hover{
+						color: @red;
+					}
+				}
+			}
+		}
+		.right-sports{
+			.left-sports;
+			.sports-box{
+				p{
+					padding: 5px 0px 0px 0px;
+				}
+				.read-more{
+					margin-top: -3px;
+					margin-bottom: 5px;
+				}
+			}
+			img{
+				margin-top: 15px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1918px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1678px) and (max-width: 1917px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1598px) and (max-width: 1677px){
+   
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1398px) and (max-width: 1597px){
+	.main-title{
+		margin-bottom: 8px;
+	}
+	.post-listing{
+		ul{
+			li{
+				padding: 11px 0;
+			}
+		}
+	}
+	.post-section{
+		.post_area{
+			.right-area{
+				.opinion_area{
+					.paragraph{
+						p{
+							padding-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+	}	
+	.punjab-news-section{
+		.news-area{
+			.left_area{
+				.one_half{
+					.thumbnail{
+						img{
+							&.add-img{
+								width: auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+    .related-video-section{
+    	.video-section{
+    		.ad_box_width{
+    		}
+    		.custom_width{
+    			width: 1170px;
+    		}
+    	}
+    }
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1200px) and (max-width: 1377px){
+    .related-video-section{
+    	.video-section{
+    		.ad_box_width{
+    		}
+    		.custom_width{
+    			width: 980px;
+    		}
+    	}
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.post-section{
+		padding: 10px 0px;
+		.post_area{
+			.right-area{
+				.post-listing{
+					ul{
+						li{
+							padding: 8px 0;
+							.img_area{
+								img{
+									width: 45px;
+								}
+							}
+							a{
+								padding: 0px 0px;
+								font-size: 14px;
+								line-height: 18px;
+							}
+						}
+					}
+				}
+				.opinion_area{
+					.paragraph{
+						p{
+							font-size: 14px;
+							padding-bottom: 6px;
+							line-height: 17px;
+						}
+					}
+				}
+			}
+		}
+		.left-area{
+			.slide-post{
+				.item{
+					.caption{
+						width: 50%;
+						background-position: -140px 0px;
+						.main-title{
+							margin-bottom: 10px;
+						}
+						h2{
+							font-size: 18px;
+						}
+						p{
+							font-size: 14px;
+							padding: 5px 0px 0px 0px;
+						}
+					}
+				}
+			}
+			.slide-text{
+				margin-top: 15px;
+			    padding-top: 15px;
+			    padding-bottom: 15px;
+				.item{
+					.logo-holder{
+						padding: 0px 10px;
+						.img_box{
+							img{
+								width: 60px;
+								height: 47px;
+							}
+						}
+						a{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.punjab-news-section{
+		.news-area{
+			.left_area{
+				padding-bottom: 0px;
+				.one_half{
+					.thumbnail{
+						margin: 0px 0px 25px 0px;
+						.caption{
+							a{
+								font-size: 20px;
+								line-height: 24px;
+							}
+						}
+					}
+				}
+			}
+			.right_area{
+				.one-half-post{
+					.content{
+						a{
+							font-size: 22px;
+							line-height: 24px;
+						}
+						p{
+							font-size: 16px;
+							padding-top: 8px;
+							padding-bottom: 10px;
+						}
+					}
+				}
+				.healthy_tips{
+					margin-top: 10px;
+					.recent-post{
+						.img_area{
+							height: 100px;
+							width: 100px;
+							margin-right: 10px;
+						}
+						.tips_area{
+							h2{
+								font-size: 28px;
+							}
+							p{
+								font-size: 18px;
+								line-height: 22px;
+							}
+						}
+					}
+					.owl-controls{
+						margin-top: 5px;
+						.owl-buttons{
+							div{
+								border-radius: 50%;
+								background-color: #dadada;
+								border: none;
+								&:hover{
+									background-color: @grey;
+								}
+								i{
+									font-size: 24px;
+								}
+								&.owl-prev{
+									padding-right: 3px;
+								}
+								&.owl-next{
+									padding-left: 2px;
+								}
+							}
+						}
+					}
+				}
+				.thumbnail{
+					.caption{
+						margin: 15px 0px 5px 0px;
+						a{
+							font-size: 22px;
+							line-height: 24px;
+						}
+						.date{
+							padding-top: 5px;
+							font-size: 14px;
+						}
+						p{
+							font-size: 16px;
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.related-video-section{
+		.video-section{
+			.left-add{
+				img{
+					
+				}
+			}
+			.ad_box_width{
+			}
+			.custom_width{
+				width: 780px;
+			}
+			.left-video{
+				iframe{
+					
+				}
+			}
+			.right-area{
+				iframe{
+					
+				}
+			}
+		}
+	}
+	.sports-section{
+		.sports-news{
+			.left-sports{
+				.sports-box{
+					p{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	.post-section{
+		padding: 20px 0px;
+		.post_area{
+			.right-area{
+				margin-top: 20px;
+				.border-line{
+					&:before{
+						display: none;
+					}
+				}
+				.post-listing{
+					ul{
+						li{
+							a{
+								padding: 0px 0px;
+								font-size: 20px;
+								line-height: normal;
+							}
+						}
+					}
+				}
+				.weather_area{
+					.weather{
+						margin-bottom: 17px;
+					}
+				}
+				.opinion_area{
+					.paragraph{
+						p{
+							padding-bottom: 8px;
+						}
+					}
+				}
+			}
+		}
+		.left-area{
+			.slide-post{
+				.item{
+					.caption{
+						.main-title{
+							margin-bottom: 20px;
+						}
+						p{
+							padding: 10px 0px 7px 0px;
+						}
+					}
+				}
+			}
+			.slide-text{
+				margin-top: 15px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				.item{
+					.logo-holder{
+						padding: 0px 20px;
+						a{
+							font-size: 17px;
+							line-height: 22px;
+						}
+						.numbers{
+							padding-left: 5px;
+							margin-top: -7px;
+							font-size: 40px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.punjab-news-section{
+		margin-top: 10px;
+		.news-area{
+			.border-right{
+				border: none;
+			}
+			.left_area{
+				.one_half{
+					.thumbnail{
+						img{
+							&.add-img{
+								width: 240px;
+							}
+						}
+					}
+				}
+			}
+			.right_area{
+				border-top: 1px solid @grey;
+				padding-top: 25px;
+				.one-half-post{
+					.content{
+						padding-bottom: 5px;
+						p{
+							font-size: 18px;
+							padding-bottom: 5px;
+						}
+					}
+				}
+				.healthy_tips{
+					margin-top: 20px;
+				}
+				.thumbnail{
+					.caption{
+						margin: 15px 0px 5px 0px;
+						a{
+							font-size: 22px;
+							line-height: 24px;
+						}
+						.date{
+							padding-top: 5px;
+							font-size: 14px;
+						}
+						p{
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.related-video-section{
+		.video-section{
+			.left-add{
+				img{
+					height: 250px;
+				}
+			}
+			.ad_box_width{
+				width: auto;
+			}
+			.custom_width{
+				width: 100%;
+			}
+			.left-video{
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 250px;
+				}
+			}
+			.right-area{
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 250px;
+				}
+			}
+		}
+	}
+	.sports-section{
+		.sports-news{
+			.left-sports{
+				margin-bottom: 20px;
+				.border-line{
+					&:after{
+						display: none;
+					}
+				}
+				.sports-box{
+					h3{
+						font-size: 26px;
+					}
+					p{
+						font-size: 18px;
+					}
+				}
+			}
+			.right-sports{
+				margin-top: 10px;
+				border-top: 1px solid;
+				border-color: @darkgrey;
+				padding-top: 20px;
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	.post-section{
+		padding: 5px 0px;
+		.post_area{
+			.right-area{
+				margin-top: 20px;
+				.border-line{
+					&:before{
+						display: none;
+					}
+				}
+				.post-listing{
+					ul{
+						li{
+							a{
+								padding: 7px 0px;
+								font-size: 18px;
+								line-height: 26px;
+							}
+						}
+					}
+				}
+				.weather_area{
+					margin: 20px 0;
+				}
+				.opinion_area{
+					.paragraph{
+						p{
+							font-size: 18px;
+							padding-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+		.left-area{
+			.slide-post{
+				.item{
+					.caption{
+						width: 80%;
+						background-position: 0px 0px;
+						background-repeat: no-repeat;
+						background-size: 100%;
+						.main-title{
+							margin-bottom: 20px;
+						}
+						h2{
+							font-size: 18px;
+						}
+						span{
+							display: none;
+						}
+						p{
+							padding: 10px 0px 7px 0px;
+						}
+					}
+				}
+			}
+			.slide-text{
+				margin-top: 15px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				.item{
+					.logo-holder{
+						padding: 0px 20px;
+						a{
+							font-size: 17px;
+							line-height: 22px;
+						}
+						.numbers{
+							padding-left: 5px;
+							margin-top: -7px;
+							font-size: 60px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.punjab-news-section{
+		margin-top: 10px;
+		.news-area{
+			.left_area{
+				.one_half{
+					.thumbnail{
+						img{
+							&.add-img{
+								width: 240px;
+							}
+						}
+						.caption{
+							a{
+								font-size: 18px;
+								line-height: 22px;
+							}
+						}
+					}
+				}
+			}
+			.border-right{
+				border: none;
+			}
+			.right_area{
+				border-top: 1px solid @grey;
+				padding-top: 25px;
+				.one-half-post{
+					.border-left{
+						border: none;
+					}
+					.content{
+						padding-bottom: 10px;
+						a{
+							font-size: 22px;
+						}
+						p{
+							font-size: 16px;
+							padding-bottom: 5px;
+						}
+					}
+				}
+				.healthy_tips{
+					margin-top: 10px;
+					margin-bottom: 0px;
+					.recent-post{
+						.img_area{
+							height: 100px;
+							width: 100px;
+							margin-right: 10px;
+						}
+						.tips_area{
+							h2{
+								font-size: 24px;
+							}
+							p{
+								font-size: 18px;
+								line-height: 22px;
+								padding-bottom: 5px;
+							}
+						}
+					}
+				}
+				.thumbnail{
+					.caption{
+						margin: 15px 0px 5px 0px;
+						a{
+							font-size: 22px;
+							line-height: 24px;
+						}
+						.date{
+							padding-top: 5px;
+							font-size: 14px;
+						}
+						p{
+							font-size: 18px;
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.related-video-section{
+		.video-section{
+			.left-add{
+				img{
+					height: 250px;
+				}
+			}
+			.ad_box_width{
+				width: auto;
+			}
+			.custom_width{
+				width: 100%;
+			}
+			.left-video{
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 300px;
+				}
+			}
+			.right-area{
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 300px;
+				}
+			}
+		}
+		.videos-parts{
+			.videos-box{
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 300px;
+				}
+			}
+		}
+	}
+	.sports-section{
+		.sports-news{
+			.left-sports{
+				.border-line{
+					&:after{
+						display: none;
+					}
+					&:before{
+						display: none;
+					}
+					.sports-box{
+						border-top: 1px solid;
+						border-bottom: 1px solid;
+						border-color: @grey;
+						padding: 10px 0;
+					}
+				}
+				.sports-box{
+					margin-bottom: 15px;
+					h3{
+						font-size: 26px;
+					}
+					p{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	.post-section{
+		padding: 5px 0px;
+		.post_area{
+			.right-area{
+				margin-top: 20px;
+				.border-line{
+					&:before{
+						display: none;
+					}
+				}
+				.post-listing{
+					ul{
+						li{
+							a{
+								padding: 0px 0px;
+								font-size: 18px;
+								line-height: normal;
+							}
+						}
+					}
+				}
+				.weather_area{
+					margin: 20px 0;
+				}
+				.opinion_area{
+					.paragraph{
+						p{
+							font-size: 18px;
+							padding-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+		.left-area{
+			.slide-post{
+				.item{
+					.caption{
+						width: 90%;
+						background-position: 0px 0px;
+						background-size: 100%;
+						.main-title{
+							margin-bottom: 20px;
+						}
+						h2{
+							font-size: 18px;
+						}
+						span{
+							display: none;
+						}
+						p{
+							padding: 10px 0px 7px 0px;
+							display: none;
+						}
+					}
+					.plus-icon{
+						display: none;
+					}
+				}
+				.owl-controls{
+					/* .owl-pagination{
+						left: 0;
+						right: 0;
+						display: table;
+						margin: 0 auto;
+					} */
+					.owl-buttons{
+						display: none;
+					}
+				}
+			}
+			.slide-text{
+				display: none !important;
+				margin-top: 15px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				.item{
+					.logo-holder{
+						padding: 0px 20px;
+						a{
+							font-size: 17px;
+							line-height: 22px;
+						}
+						.numbers{
+							padding-left: 5px;
+							margin-top: -7px;
+							font-size: 40px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.punjab-news-section{
+		margin-top: 10px;
+		.news-area{
+			.border-right{
+				border: none;
+			}
+			.right_area{
+				border-top: 1px solid @grey;
+				padding-top: 25px;
+				.border-left{
+					border: none;
+				}
+				.one-half-post{
+					.content{
+						padding-bottom: 10px;
+						a{
+							font-size: 26px;
+						}
+						p{
+							font-size: 18px;
+							padding-bottom: 5px;
+						}
+					}
+				}
+				.healthy_tips{
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+				.thumbnail{
+					.caption{
+						margin: 15px 0px 5px 0px;
+						a{
+							font-size: 22px;
+							line-height: 24px;
+						}
+						.date{
+							padding-top: 5px;
+							font-size: 14px;
+						}
+						p{
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.related-video-section{
+		.video-section{
+			.left-add{
+				img{
+					height: 250px;
+				}
+			}
+			.ad_box_width{
+				width: auto;
+			}
+			.custom_width{
+				width: 100%;
+			}
+			.left-video{
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 250px;
+				}
+			}
+			.right-area{
+				margin-top: 15px;
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 250px;
+				}
+			}
+		}
+		.videos-parts{
+			.videos-box{
+				iframe{
+					height: 250px;
+				}
+			}
+		}
+	}
+	.sports-section{
+		.sports-news{
+			.left-sports{
+				.border-line{
+					&:after{
+						display: none;
+					}
+					&:before{
+						display: none;
+					}
+					.sports-box{
+						border-top: 1px solid;
+						border-bottom: 1px solid;
+						border-color: @grey;
+						padding: 10px 0;
+					}
+				}
+				.sports-box{
+					margin-bottom: 15px;
+					h3{
+						font-size: 26px;
+					}
+					p{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	.post-section{
+		padding: 5px 0px;
+		.post_area{
+			.right-area{
+				margin-top: 20px;
+				.border-line{
+					&:after{
+						display: none;
+					}
+					&:before{
+						display: none;
+					}
+				}
+				.post-listing{
+					ul{
+						li{
+							a{
+								padding: 0px 0px;
+								font-size: 18px;
+								line-height: normal;
+							}
+						}
+					}
+				}
+				.weather_area{
+					margin: 20px 0;
+				}
+				.opinion_area{
+					.paragraph{
+						p{
+							font-size: 18px;
+							padding-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+		.left-area{
+			.slide-post{
+				.item{
+					.caption{
+						width: 90%;
+						background-position: 0px 0px;
+						background-size: 100%;
+						.main-title{
+							margin-bottom: 20px;
+						}
+						h2{
+							font-size: 18px;
+						}
+						span{
+							display: none;
+						}
+						p{
+							padding: 10px 0px 7px 0px;
+							display: none;
+						}
+					}
+					.plus-icon{
+						display: none;
+					}
+				}
+				.owl-controls{
+					/* .owl-pagination{
+						left: 0;
+						right: 0;
+						display: table;
+						margin: 0 auto;
+					} */
+					.owl-buttons{
+						display: none;
+					}
+				}
+			}
+			.slide-text{
+				display: none !important;
+				margin-top: 15px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				.item{
+					.logo-holder{
+						padding: 0px 20px;
+						a{
+							font-size: 17px;
+							line-height: 22px;
+						}
+						.numbers{
+							padding-left: 5px;
+							margin-top: -7px;
+							font-size: 40px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.punjab-news-section{
+		margin-top: 10px;
+		.news-area{
+			.border-right{
+				border: none;
+			}
+			.right_area{
+				border-top: 1px solid @grey;
+				padding-top: 25px;
+				.border-left{
+					border: none;
+				}
+				.one-half-post{
+					.content{
+						padding-bottom: 10px;
+						a{
+							font-size: 26px;
+						}
+						p{
+							font-size: 18px;
+							padding-bottom: 5px;
+						}
+					}
+				}
+				.healthy_tips{
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+				.thumbnail{
+					.caption{
+						margin: 15px 0px 5px 0px;
+						a{
+							font-size: 22px;
+							line-height: 24px;
+						}
+						.date{
+							padding-top: 5px;
+							font-size: 14px;
+						}
+						p{
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.related-video-section{
+		.video-section{
+			.left-add{
+				img{
+					height: 250px;
+				}
+			}
+			.ad_box_width{
+				width: auto;
+			}
+			.custom_width{
+				width: 100%;
+			}
+			.left-video{
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 200px;
+				}
+			}
+			.right-area{
+				margin-top: 15px;
+				img{
+					height: auto;
+				}
+				iframe{
+					height: 200px;
+				}
+			}
+		}
+		.videos-parts{
+			.videos-box{
+				iframe{
+					height: 200px;
+				}
+			}
+		}
+	}
+	.sports-section{
+		.sports-news{
+			.left-sports{
+				.border-line{
+					&:after{
+						display: none;
+					}
+					&:before{
+						display: none;
+					}
+					.sports-box{
+						border-top: 1px solid;
+						border-bottom: 1px solid;
+						border-color: @grey;
+						padding: 10px 0;
+					}
+				}
+				.sports-box{
+					margin-bottom: 15px;
+					h3{
+						font-size: 26px;
+					}
+					p{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}
