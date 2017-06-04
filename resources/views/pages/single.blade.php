@@ -52,16 +52,13 @@
 									</div>
 									{!! $pageInfo->present()->preview !!}
 									<div class="date">
-										{{ $pageInfo->present()->eventDate }} (IST)
+										{!! $pageInfo->present()->eventDate !!}
 									</div>
 									<p>
 										{!! $pageInfo->present()->description !!}
 									</p>
 									<div class="next-prev">
 										<ul class="list-inline">
-											<?php
-												$route = isset($isVideo) ? 'pages.single' : "pages.single";
-											?>
 											@if($prev)
 												<?php $route = isset($isVideo) ? route('video.single.view', $prev->present()->slug) : route('pages.single', $prev->present()->slug); ?>
 												<li class="prev">
@@ -74,7 +71,7 @@
 												<?php $route = isset($isVideo) ? route('video.single.view', $next->present()->slug) : route('pages.single', $next->present()->slug); ?>
 												<li class="next">
 													<a href="{{ $route }}">
-														{{ str_limit($prev->present()->title, 40) }}
+														{{ str_limit($next->present()->title, 40) }}
 													</a>
 												</li>
 											@endif
@@ -93,16 +90,17 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+										<?php if($next || $prev): ?>
+											<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
 											<div class="right_area">
-												<a href="#">
+												<a href="<?php echo $prev ? $prev->slug : $next->slug; ?>">
 													<h2>
-														PSEB boards: 30-km travel to exam ...
+														<?php echo $prev ? $prev->title : $next->title; ?>
 													</h2>
 												</a>
 												<span>February 24, 2017</span>
 												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporv incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+													{{ str_limit($prev ? $prev->short_description : $next->short_description, 150) }}
 												</p>
 												<div class="mid_area">
 													<div class="img_area pull-left">
@@ -120,6 +118,7 @@
 												</div>
 											</div>
 										</div>
+										<?php endif; ?>
 									</div>
 								</div>
 							</div>

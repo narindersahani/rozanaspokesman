@@ -18,16 +18,17 @@ class YouTubeVideoImages
 		$url = $this->video->getUrl();
 		$youTubeVideoId = null;
 
-		if(strpos($url, 'embed') == FALSE) {
-			$urlArr = explode('=', $url);
-			$urlArr2 = explode('&', $urlArr[1]);
-			$youTubeVideoId = $urlArr2[0];
-		} else {
+		if(strpos($url, '?v=') > -1) {
+			$link = explode('?', $url);
+			parse_str($link[1], $output);
+			$youTubeVideoId = $output['v'];
+		}
+		else {
 			$urlArr = explode('/', $url);
 			$youTubeVideoId = array_pop($urlArr);
 		}
 		
-		$largeImgUrl = sprintf($this->imgBaseUrl, $youTubeVideoId, "0");
+		$largeImgUrl = sprintf($this->imgBaseUrl, $youTubeVideoId, "maxresdefault");
 		$thumbnailImgUrl = sprintf($this->imgBaseUrl, $youTubeVideoId, "0");
 		$smallImgUrl = sprintf($this->imgBaseUrl, $youTubeVideoId, "1");
 		$url = sprintf($this->embeddedUrl, $youTubeVideoId);

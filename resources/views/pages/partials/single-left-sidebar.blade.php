@@ -11,7 +11,8 @@
 				{{ $leftNews->present()->eventDate }}
 			</span>
 			<p>
-				{{ str_limit($leftNews->present()->shortDescription, 300) }}
+				{{ str_limit($leftNews->present()->shortDescription, 150) }}
+				<a href="<?php route('pages.single', $leftNews->present()->slug); ?>" class="read-more">See More</a>
 			</p>
 		</div>
 	</div>

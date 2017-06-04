@@ -10,7 +10,7 @@ class CategoryPresenter extends Presenter {
     public function location()
     {
         $locations = $this->entity->getLocationsList();
-        return $locations[$this->entity->getLocation()] ?? "N/A";
+        return $locations[$this->entity->getLocation()] ? $locations[$this->entity->getLocation()] : "N/A";
     }
 
     public function name()

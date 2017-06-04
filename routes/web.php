@@ -32,6 +32,7 @@ Route::get('/video-rozana',['as'=>'pages.video_rozana','uses'=>'PagesController@
 Route::get('/category/{slug}', ['as' => 'homepage.category', 'uses' => 'PagesController@categoryNews']);
 Route::get('/news/{slug}', ['as' => 'homepage.category.news', 'uses' => 'PagesController@newsByCategory']);
 Route::get('/sports-rozana', ['as' => 'homepage.category.news', 'uses' => 'PagesController@sportsNews']);
+Route::get('/resize', ['uses' => 'HomeController@resize']);
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

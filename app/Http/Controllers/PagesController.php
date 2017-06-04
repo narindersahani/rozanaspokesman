@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -81,7 +80,8 @@ class PagesController extends BaseController
 	{
 
 		$page = $this->repository->getPage($slug);
-
+		if(!$page)
+		abort(404);
 		$topNews = $this->postRepository->getTopNews($request);
 		$leftNews = $this->postRepository->getSingleRendomNews($request);
 		$prev = $this->postRepository->getLatestPrev($page->getKey());

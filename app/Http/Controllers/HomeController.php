@@ -84,4 +84,16 @@ class HomeController extends Controller
             'next' => $next
         ]);
     }
+    
+	function resize(Request $request){
+		$size = explode('*', $_GET['size']);
+		$width = $size[0];
+		$height = $size[1];
+		$filename = $_GET['path'];
+		$path = public_path();
+		$im = new \App\Services\ImageManipulator($path . $filename);
+		$im->cropResize($width, $height);
+		$im->show();
+		exit;
+	}
 }

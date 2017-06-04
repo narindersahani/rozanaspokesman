@@ -27,7 +27,7 @@ class UpdateVideoRequest extends FormRequest
             'title' => 'required|max:250',
             'categories' => 'required',
             'short_description' => 'required',
-            'url' => 'required|url|youtube_url_validate',
+            'url' => 'required|url',
             /*'start_date' => 'required',
             'end_date' => 'required',
             'event_date' => 'required',*/

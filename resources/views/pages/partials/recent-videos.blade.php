@@ -1,6 +1,6 @@
 <?php
 	$firstVideo = $latestVideos->first();
-	$secondVideo = $latestVideos[1] ?? null;
+	$secondVideo = @$latestVideos[1] ? $latestVideos[1] : null;
 ?>
 <section class="related-video-section">
 	<div class="container">
@@ -13,44 +13,36 @@
 				</div>
 				<div class="video-section">
 					<div class="row">
-						<div class="col-lg-2 col-md-2 hidden-sm hidden-xs ad_box_width">
+						<div class="col-lg-2 col-md-2 hidden-sm hidden-xs text-center">
 							<div class="left-add">
 								<img src="{{ asset('/frontend/images/left-add.jpg') }}" alt="..." />
 							</div>
 						</div>
-						<div class="custom_width">
 							@if($firstVideo)
-								<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-ip-6">
+								<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 col-ip-6">
+									<div style="margin-bottom: 10px;">
+										<h3><?php echo $firstVideo->title ?></h3>
+										<p>{{str_limit($firstVideo->present()->short_description, 380)}}</p>
+									</div>
+									
 									<div class="left-video">
 										<a href="{{ route('video.single.view', ['slug' => $firstVideo->present()->slug, 'cat_slug' => $category]) }}" target="_blank">
-											<img src="{{ asset($firstVideo->present()->largeImage)}}" alt="{{ $firstVideo->present()->title }}" height="600" width="700"/>
+											<img src="{{ asset($firstVideo->present()->largeImage)}}" alt="{{ $firstVideo->present()->title }}"/>
 										</a>
 									</div>
 								</div>
 							@else
-								<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 col-ip-6">
+								<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 col-ip-6">
 									<div class="left-video">
 										Coming Soon
 									</div>
 								</div>
 							@endif
-
-							@if($secondVideo)
-								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-ip-6">
-									<div class="right-area">
-										<a href="{{ route('video.single.view', ['slug' => $secondVideo->present()->slug, 'cat_slug' => $category]) }}" target="_blank">
-											<img src="{{ asset($secondVideo->present()->largeImage)}}" alt="{{ $secondVideo->present()->title }}" height="600" width="350"/>
-										</a>
-									</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-ip-6 text-right">
+								<div class="right-area">
+									<img src="http://lorempixel.com/300/550">
 								</div>
-							@else
-								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-ip-6">
-									<div class="right-area">
-										Coming Soon
-									</div>
-								</div>
-							@endif
-						</div>
+							</div>
 					</div>
 				</div>
 				@if(count($latestVideos) > 2)

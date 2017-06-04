@@ -30,7 +30,7 @@ class CreatePostRequest extends FormRequest
             /*'start_date' => 'required',
             'end_date' => 'required',
             'event_date' => 'required',*/
-            'image' => 'dimensions:min_width=1055,min_height=550',
+	          'image' => 'required',
             
         ];
     }
