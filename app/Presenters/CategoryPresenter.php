@@ -38,5 +38,20 @@ class CategoryPresenter extends Presenter {
         }
         return html_entity_decode($icon);
     }
+    
+    
+    public function squreThumbnailImage()
+    {
+        $image = $this->entity->getImage();
+
+        if(!$image) {
+            return config('global.squre_thumbnail_placeholde_image');
+        }
+        
+        $uploads = config('global.upload_dir');
+        $uploads .= DIRECTORY_SEPARATOR . config('global.posts_dir_path.main_img_dir');
+        $uploads .= DIRECTORY_SEPARATOR . config('global.posts_dir_path.squre_thumb_dir');
+        return $uploads . DIRECTORY_SEPARATOR . $image;
+    }
 
 }

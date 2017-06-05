@@ -26,9 +26,10 @@
 									</div>
 									
 									<div class="left-video">
-										<a href="{{ route('video.single.view', ['slug' => $firstVideo->present()->slug, 'cat_slug' => $category]) }}" target="_blank">
+										<?php echo $firstVideo->present()->preview ?>
+										<!--a href="{{ route('video.single.view', ['slug' => $firstVideo->present()->slug, 'cat_slug' => $category]) }}" target="_blank">
 											<img src="{{ asset($firstVideo->present()->largeImage)}}" alt="{{ $firstVideo->present()->title }}"/>
-										</a>
+										</a-->
 									</div>
 								</div>
 							@else

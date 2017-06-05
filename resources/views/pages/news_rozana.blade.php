@@ -63,33 +63,37 @@
 						<div class="left_content">
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 border-right">
+									<?php if($secondItem): ?>
 									<div class="news_area">
 										<h3>
 											{{ $firstItem->present()->title }}
 										</h3>
-										<span>{{ $firstItem->present()->eventDate }}</span>
+										<span>{{ $firstItem->eventDate }}</span>
 										<p>
-											{{ str_limit($firstItem->present()->shortDescription, 200) }}
+											{{ str_limit($firstItem->shortDescription, 200) }}
 										</p>
-										<a href="{{ route('pages.single', $firstItem->present()->slug) }}" class="read-more">
+										<a href="{{ route('pages.single', $firstItem->slug) }}" class="read-more">
 											See More
 										</a>
 									</div>
+									<?php endif; ?>
 								</div>
 								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+								    	<?php if($secondItem): ?>
 									<div class="mid_area">
 										<div class="img_area pull-left">
 											<img src="{{ asset( $secondItem->present()->squreThumbnailImage ) }}" alt="{{$secondItem->present()->title}}">
 										</div>
 										<div class="right_area">
 											<h3>
-												{{ $secondItem->present()->title }}
+												{{ $secondItem->title }}
 											</h3>
 											<p>
-												{{ str_limit($secondItem->present()->shortDescription, 100) }}
+												{{ str_limit($secondItem->shortDescription, 100) }}
 											</p>
 										</div>
 									</div>
+									<?php endif; ?>
 								</div>
 								<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
 									<div class="add_box">

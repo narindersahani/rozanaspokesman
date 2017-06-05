@@ -51,7 +51,7 @@ class VideoPresenter extends Presenter {
 
     public function preview()
     {
-        return '<iframe src="'.$this->entity->getUrl().'?rel=0&amp;controls=0" frameborder="0" allowfullscreen width="700" height="400">></iframe>';
+        return '<iframe src="'.$this->entity->getUrl().'?rel=0&amp;controls=0" frameborder="0" allowfullscreen width="100%" height="480px"></iframe>';
         // return '<iframe src="'.$this->entity->getUrl().'?rel=0&amp;controls=0" frameborder="0" allowfullscreen width="600" height="700"></iframe>';
     }
 
