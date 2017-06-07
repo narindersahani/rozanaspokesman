@@ -21,7 +21,7 @@ class VideosRepository extends AppRepository
 		$builder = $builder->whereActive()
 						->orderCreatedAt('DESC')
 						->displayOrderBy()
-						->limit(6);
+						->limit(5);
 
 		$videos = $builder->get();
 		return $videos;

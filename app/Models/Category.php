@@ -64,6 +64,7 @@ class Category extends Model
     public function getLocationsList()
     {
         return [
+            '' => "",
             self::HEADER_LOCATION => "Header",
             self::BELOW_HEADER_LOCATION => "Below Header"
         ];

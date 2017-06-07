@@ -8,6 +8,7 @@ use App\Repositories\PostsRepository;
 use App\Repositories\VideosRepository;
 use View;
 use DB;
+use App\Models\Category;
 class HomeController extends Controller
 {
     protected $repository;
@@ -45,7 +46,13 @@ class HomeController extends Controller
         $politicsNews = $this->repository->getPoliticsNews($request);
         $sportsNews = $this->repository->getSportsNews($request);
         $latestVideos = $this->videosRepository->getLatest();
-
+		
+		$lifestyleNews = $this->repository->getByCategory($request, Category::LIFESTYLE_SLUG);
+        $entertainmentNews = $this->repository->getByCategory($request, Category::ENTERTAINMENT_SLUG);
+        $haryanaNews = $this->repository->getByCategory($request, 'haryana');
+        $hpNews = $this->repository->getByCategory($request, 'hp');
+        $jnkNews = $this->repository->getByCategory($request, 'j-k');
+        
         return view('pages.index', [
             'category' => null,
             'punjabiNews' => $punjabiNews,
@@ -54,7 +61,12 @@ class HomeController extends Controller
             'sportsNews' => $sportsNews,
             'latestVideos' => $latestVideos,
             'meta' => $meta,
-            'pageTitle'=>$pageTitle
+            'pageTitle'=>$pageTitle,
+            'entertainmentNews'=>$entertainmentNews,
+            'haryanaNews'=>$haryanaNews,
+            'hpNews'=>$hpNews,
+            'jnkNews'=>$jnkNews,
+            'lifestyleNews'=>$lifestyleNews
         ]);
     }
 

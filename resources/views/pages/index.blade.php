@@ -23,11 +23,14 @@
 	<!-- ==== Punjab News section start ==== -->
 	@include('pages.partials.punjab-news')
 	<!-- ==== punjab news section end ==== -->
-
+	@include('pages.partials.lifestyle-news')
+	@include('pages.partials.entertainment-news')
 	<!-- ==== Related videos section start ==== -->
 	@include('pages.partials.recent-videos')
 	<!-- ==== Related videos section end ==== -->
-
+	@include('pages.partials.harayana-news')
+	@include('pages.partials.hp-news')
+	@include('pages.partials.jnk-news')
 	<!-- ==== Sports section start ==== -->
 	@include('pages.partials.sports')
 	<!-- ==== Sports section end ==== -->

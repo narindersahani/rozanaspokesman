@@ -15,7 +15,7 @@
 									<img src="{{ asset($pol_news->present()->thumbnailImage)}}" alt="{{ $pol_news->present()->title }}" />
 								</div>
 								<a href="{{ route('pages.single', $pol_news->present()->slug) }}">
-									{{ $pol_news->present()->title }}
+									{{ str_limit($pol_news->present()->title, 50) }}
 								</a>
 							</li>
 						@endforeach

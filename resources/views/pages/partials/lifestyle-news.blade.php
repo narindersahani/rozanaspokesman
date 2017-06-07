@@ -1,10 +1,10 @@
-<section class="punjab-news-section">
+<section class="related-video-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="main-title">
 					<h3>
-						Punjab News
+						Lifestyle News
 					</h3>
 				</div>
 				<div class="news-area">
@@ -12,7 +12,7 @@
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div class="left_area">
 								<div class="row">
-									@foreach($punjabiNews as $pnews)
+									@foreach($lifestyleNews as $pnews)
 										<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-ip-6">
 											<div class="one_half">
 												<div class="thumbnail">
@@ -38,3 +38,4 @@
 		</div>
 	</div>
 </section>
+

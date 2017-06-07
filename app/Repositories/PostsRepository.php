@@ -6,7 +6,6 @@ use App\Repositories\AppRepository;
 use App\Models\Post;
 use App\Services\DateTimeSettings;
 use App\Models\Category;
-
 class PostsRepository extends AppRepository
 {
 	protected $model;
@@ -22,7 +21,19 @@ class PostsRepository extends AppRepository
 		$builder = $builder->whereCategoryPunjab()
 						->whereActive()
 						->orderByDesc('created_at')
-						->limit(8);
+						->limit(4);
+		
+		$posts = $builder->get();
+		return $posts;
+	}
+	
+	public function getByCategory($request, $category)
+	{
+		$builder = new Post;
+		$builder = $builder->whereCategory($category)
+						->whereActive()
+						->orderByDesc('created_at')
+						->limit(4);
 		
 		$posts = $builder->get();
 		return $posts;
@@ -31,10 +42,10 @@ class PostsRepository extends AppRepository
 	public function getTopNews($request)
 	{
 		$builder = new Post;
-		$builder = $builder->whereTopNews()
+		$builder = $builder
 						->whereActive()
 						->orderByDesc('created_at')
-						->limit(10);
+						->limit(8);
 		
 		$posts = $builder->get();
 		return $posts;

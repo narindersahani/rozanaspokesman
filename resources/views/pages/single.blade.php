@@ -57,13 +57,16 @@
 									<p>
 										{!! $pageInfo->present()->description !!}
 									</p>
+									<div style="margin:10px 0;">
+										<div style="width:100%" class="fb-comments" data-href="http://www.rozanaspokesman.in/single/capt-amarinder-to-present-maiden-budget-on-june-20" data-numposts="5"></div>
+									</div>
 									<div class="next-prev">
 										<ul class="list-inline">
 											@if($prev)
 												<?php $route = isset($isVideo) ? route('video.single.view', $prev->present()->slug) : route('pages.single', $prev->present()->slug); ?>
 												<li class="prev">
 													<a href="{{ $route }}">
-														{{ str_limit($prev->present()->title, 40) }}
+														Previous
 													</a>
 												</li>
 											@endif
@@ -71,7 +74,7 @@
 												<?php $route = isset($isVideo) ? route('video.single.view', $next->present()->slug) : route('pages.single', $next->present()->slug); ?>
 												<li class="next">
 													<a href="{{ $route }}">
-														{{ str_limit($next->present()->title, 40) }}
+														Next
 													</a>
 												</li>
 											@endif
@@ -98,7 +101,7 @@
 														<?php echo $prev ? $prev->title : $next->title; ?>
 													</h2>
 												</a>
-												<span>February 24, 2017</span>
+												<span>{!! $prev ? $prev->present()->eventDate : $next->present()->eventDate !!}</span>
 												<p>
 													{{ str_limit($prev ? $prev->short_description : $next->short_description, 150) }}
 												</p>

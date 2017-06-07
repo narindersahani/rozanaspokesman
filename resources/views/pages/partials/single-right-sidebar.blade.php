@@ -8,6 +8,9 @@
 		<ul>
 			@foreach($topNews as $top)
 				<li>
+					<div class="img_area pull-left">
+						<img src="{{ asset($top->present()->thumbnailImage)}}" alt="{{ $top->present()->title }}" />
+					</div>
 					<a href="{{ route('pages.single', $top->present()->slug) }}">
 						{{ $top->present()->title }}
 					</a>

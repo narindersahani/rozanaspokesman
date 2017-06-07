@@ -51,8 +51,8 @@
                                                 </a>
                                             </div>
                                             <div class="date">
-                                                Monday
-                                                <span>2, Febuary 2017</span>
+                                                <?php echo date('l'); ?>
+                                                <span><?php echo date('d M, Y'); ?></span>
                                             </div>
                                         </div>
                                     </div>
@@ -66,22 +66,22 @@
                                             <div class="social-icons">
                                                 <ul class="list-inline">
                                                     <li class="facebook">
-                                                        <a href="#">
+                                                        <a target="_blank" href="https://www.facebook.com/RozanaSpokesmanOfficial">
                                                             <i class="fa fa-facebook"></i>
                                                         </a>
                                                     </li>
                                                     <li class="twitter">
-                                                        <a href="#">
+                                                        <a target="_blank" href="https://twitter.com/rozanaspokesma1">
                                                             <i class="fa fa-twitter"></i>
                                                         </a>
                                                     </li>
                                                     <li class="google-plus">
-                                                        <a href="#">
+                                                        <a target="_blank" href="https://plus.google.com/u/0/+Rozanaspokesmantv">
                                                             <i class="fa fa-google-plus"></i>
                                                         </a>
                                                     </li>
                                                     <li class="youtube">
-                                                        <a href="#">
+                                                        <a target="_blank" href="https://www.youtube.com/channel/UCWs1iht2UHjN5XODx4CdSzw">
                                                             <i class="fa fa-youtube"></i>
                                                         </a>
                                                     </li>
