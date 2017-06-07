@@ -110,22 +110,22 @@
 												<div class="social-icons">
 													<ul class="list-inline">
 														<li class="facebook">
-															<a href="#">
+															<a href="https://www.facebook.com/RozanaSpokesmanOfficial" target="_blank">
 																<i class="fa fa-facebook"></i>
 															</a>
 														</li>
 														<li class="twitter">
-															<a href="#">
+															<a href="https://twitter.com/rozanaspokesma1" target="_blank">
 																<i class="fa fa-twitter"></i>
 															</a>
 														</li>
 														<li class="google-plus">
-															<a href="#">
+															<a href="https://plus.google.com/u/0/+Rozanaspokesmantv" target="_blank">
 																<i class="fa fa-google-plus"></i>
 															</a>
 														</li>
 														<li class="youtube">
-															<a href="#">
+															<a href="https://www.youtube.com/channel/UCWs1iht2UHjN5XODx4CdSzw" target="_blank">
 																<i class="fa fa-youtube"></i>
 															</a>
 														</li>

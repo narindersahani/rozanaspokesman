@@ -44,7 +44,9 @@ return [
      *    'method' => array('Str','slug'),
      */
 
-    'method' => null,
+    'method' => function( $string, $sep = '-' ) {
+		return preg_replace("#(\p{P}|\p{C}|\p{S}|\p{Z})+#u", $sep, strtolower($string));
+    },
 
     /**
      * Separator to use when generating slugs.  Defaults to a hyphen.

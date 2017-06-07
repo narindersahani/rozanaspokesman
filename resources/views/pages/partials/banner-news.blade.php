@@ -12,10 +12,6 @@
                 	<h2>
                 		{{ $banner->present()->title }}
                 	</h2>
-                	<span>{{ $banner->present()->eventDate }}</span>
-                	<p>
-                		{{ str_limit($banner->present()->shortDescription, 300) }}
-                	</p>
                 	<a href="{{ route('pages.single', $banner->present()->slug) }}" class="read-more">See More</a>
                 </div>
                 <!-- <div class="plus-icon">

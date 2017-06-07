@@ -1,6 +1,5 @@
 <?php
 	$firstVideo = $latestVideos->first();
-	$secondVideo = @$latestVideos[1] ? $latestVideos[1] : null;
 ?>
 <section class="related-video-section">
 	<div class="container">
@@ -46,11 +45,11 @@
 							</div>
 					</div>
 				</div>
-				@if(count($latestVideos) > 2)
+				@if(count($latestVideos) > 1)
 					<div class="videos-parts">
 						<div class="row">
 							@foreach($latestVideos as $key => $video)
-								@if($key > 1)
+								@if($key > 0)
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-ip-6">
 										<div class="videos-box">
 											<a href="{{ route('video.single.view', ['slug' => $video->present()->slug, 'cat_slug' => $category]) }}">
